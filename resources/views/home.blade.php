@@ -8,6 +8,8 @@
     @vite('resources/css/app.css')
 </head>
 <body>
+    <p class="text-3xl bg-red-500">Valencia Browlim</p>
     <h1> Hello World! </h1>
+    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="shoes" /></figure>
 </body>
 </html>
