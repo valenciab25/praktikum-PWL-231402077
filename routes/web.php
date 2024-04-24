@@ -1,6 +1,11 @@
 <?php
 
+use App\Http\Controllers\TodoTaskController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+use Illuminate\Http\Controllers\Delete;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +18,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home1');
-});
+Route::get('/', [TodoTaskController::class, 'index']);
+
+Route::post('/', [TodoTaskController::class, 'store']);
+
+Route::delete('/{id}', [TodoTaskController::class, 'hapus']);
+
+
+
+// Route::post('/', function () {
+//     return 'Halaman Post';
+// });
